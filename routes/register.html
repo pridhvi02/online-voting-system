@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Online Voting</title>
+  </head>
+
+  <body>
+    <div id="headsec">
+      <h1>Online Voting System</h1>
+      <hr />
+      <hr />
+    </div>
+    <div id="body">
+      <h2>Registration</h2>
+      <br /><br />
+      <form
+        action="../api/register.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="text" name="name" placeholder="Enter Name" />
+        <input
+          type="number"
+          name="mobile"
+          placeholder="Enter Mobile no:"
+        /><br /><br />
+        <input type="password" name="password" placeholder="Enter Password" />
+        <input
+          type="password"
+          name="cpassword"
+          placeholder="Confirm Password"
+        /><br /><br />
+        <textarea
+          name="address"
+          id="address"
+          placeholder="enter your address"
+        ></textarea
+        ><br /><br />
+        <input
+          type="file"
+          name="photo"
+          id="file"
+          placeholder="upload photo"
+        /><br /><br />
+
+        <select name="role" id="dropbox">
+          <option value="1">Individual</option>
+          <option value="2">Party</option></select
+        ><br /><br />
+
+        <button id="registrbtn">Register</button><br /><br />
+        Already logged in?<a href="../index.html">Login Here</a>
+      </form>
+    </div>
+  </body>
+</html>
